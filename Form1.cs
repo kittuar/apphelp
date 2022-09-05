@@ -1,4 +1,4 @@
-﻿using System;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -23,15 +23,15 @@ namespace KeyApp
         public int NumberOfContacts { get; set; }
         public Form1()
         {
-            InitializeComponent(); 
-            
+            InitializeComponent();
+
         }
 
 
         public Button myText;
-        public Form2 Form2Ref;
         
-       
+
+
 
 
 
@@ -47,7 +47,7 @@ namespace KeyApp
             {
                 textBox1.Text = "good morning! let's start off with the basics.";
                 // new Form2().Show();
-                
+
             }
             if (textBox1.Text == "good morning! let's start off with the basics.")
             {
@@ -70,13 +70,13 @@ namespace KeyApp
                 button5.BackgroundImageLayout = ImageLayout.Stretch;
                 button5.Text = " ";
                 button5.Size = new Size(146, 146);
-                
+
                 tableLayoutPanel2.SetColumnSpan(button5, 1);
                 tableLayoutPanel2.SetRowSpan(button5, 3);
                 button5.Anchor = (AnchorStyles.Top | AnchorStyles.Right);
 
 
-                
+
                 tableLayoutPanel2.ColumnStyles[1].Width = 10;
 
             }
@@ -119,7 +119,7 @@ namespace KeyApp
 
         private void button3_Click(object sender, EventArgs e)
         {
-            
+
             if (textBox1.Text == "good morning! let's start off with the basics." | textBox1.Text == "amazing! a button was pushed!")
             {
                 textBox1.Text = "you're sure clicking that button~!";
@@ -141,10 +141,6 @@ namespace KeyApp
 
                 new Form2().Show();
 
-                Form2 f2 = new Form2();
-
-               
-
             }
 
 
@@ -153,10 +149,6 @@ namespace KeyApp
         }
 
 
-        public void setformRef(Form2 f)
-        {
-            this.Form2Ref = f;
-        }
 
 
 
@@ -203,9 +195,6 @@ namespace KeyApp
 
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
-
-        }
+        
     }
 }
